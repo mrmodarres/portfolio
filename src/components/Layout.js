@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   BiBook,
   BiBriefcase,
@@ -7,11 +8,20 @@ import {
   BiUser,
 } from "react-icons/bi";
 function Layout({ children }) {
+  const scrollHeader = () => {
+    const header = document.getElementById("header");
+    if (window.scrollY >= 50) {
+      header.classList.add("scroll-header");
+    } else if (window.scrollY === 0) {
+      header.classList.remove("scroll-header");
+    }
+  };
+  window.addEventListener("scroll", scrollHeader);
   return (
     <>
-      <header class="header" id="header">
+      <header className="header " id="header">
         <nav className="nav container">
-          <a href="#" className="nav__logo">
+          <a href="#home" className="nav__logo">
             Mehdi
           </a>
           <div className="nav__menu">
