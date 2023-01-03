@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import { BsDribbble, BsGithub, BsLinkedin, BsMouse } from "react-icons/bs";
 function Home() {
   return (
@@ -22,20 +23,24 @@ function Home() {
             </a>
           </div>
         </div>
-        <div className="home__handle">
-          <img src="/media/image/profile.png" alt="" className="home__img" />
-        </div>
-        <div className="home__social">
-          <a href="" className="home__social-link">
-            <BsLinkedin />
-          </a>
-          <a href="" className="home__social-link">
-            <BsGithub />
-          </a>
-          <a href="" className="home__social-link">
-            <BsDribbble />
-          </a>
-        </div>
+        <Fade style={{ margin: "auto" }}>
+          <div className="home__handle">
+            <img src="/media/image/profile.png" alt="" className="home__img" />
+          </div>
+        </Fade>
+        <Fade direction="top-left">
+          <div className="home__social">
+            <a href="" className="home__social-link">
+              <BsLinkedin />
+            </a>
+            <a href="" className="home__social-link">
+              <BsGithub />
+            </a>
+            <a href="" className="home__social-link">
+              <BsDribbble />
+            </a>
+          </div>
+        </Fade>
         <a href="#about" className="home__scroll">
           <BsMouse className="home__scroll-icon" />
           <span className="home__scroll-name">Scroll Down</span>
