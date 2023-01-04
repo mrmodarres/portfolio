@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect, useState } from "react";
 import About from "./section/About";
 import Home from "./section/Home";
 import Skills from "./section/Skills";

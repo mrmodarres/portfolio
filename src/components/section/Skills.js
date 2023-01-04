@@ -1,6 +1,6 @@
 import React from "react";
 import { BiBadgeCheck } from "react-icons/bi";
-
+import { Fade } from "react-awesome-reveal";
 function Skills() {
   return (
     <section class="skills section" id="skills">

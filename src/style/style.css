@@ -13,12 +13,12 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
   */
-  --first-hue: 250;
-  --sat: 66%;
-  --lig: 75%;
+  --first-hue: 207;
+  --sat: 90%;
+  --lig: 72%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), %); /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -186,6 +186,8 @@ body.light-theme {
 }
 .section {
   padding: 4.5rem 0 1rem;
+  /* height: 100vh; */
+  /* scroll-snap-type: y mandatory; */
 }
 .section_title,
 .section_subtitle {
@@ -303,10 +305,10 @@ body.light-theme {
     hsla(var(--first-hue), var(--sat), var(--lig), 1),
     hsla(var(--first-hue), var(--sat), var(--lig), 0.2)
   );
-  border-radius: 10rem 10rem 1rem 1rem;
+  border-radius: 10rem 1rem 10rem 1rem;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  /* justify-content: center; */
   overflow: hidden;
 }
 
@@ -777,9 +779,43 @@ body.light-theme {
   background-color: hsl(var(--second-hue), 8%, 20%);
 }
 /*=============== BREAKPOINTS ===============*/
-
+/* For small devices */
+@media screen and (max-width: 460px) {
+  .nav__menu {
+    padding: 1rem 1.5rem;
+  }
+  .home__buttons {
+    flex-direction: column;
+  }
+  .home__handle {
+    width: 150px;
+    height: 253px;
+  }
+  .home__img {
+    width: 130px;
+  }
+  .about__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills__box {
+    column-gap: 1rem;
+  }
+  .skills__name {
+    font-size: var(--small-font-size);
+  }
+  .services__container {
+    grid-template-columns: 145px !important;
+    justify-content: center;
+  }
+  .work__item {
+    font-size: var(--small-font-size);
+  }
+  .work__filters {
+    column-gap: 0.25rem;
+  }
+}
 /* For medium devices */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) and (min-width: 461px) {
   .nav__menu {
     width: 328px;
     left: 0;
@@ -834,41 +870,7 @@ body.light-theme {
     column-gap: 3rem;
   }
 }
-/* For small devices */
-@media screen and (max-width: 460px) {
-  .nav__menu {
-    padding: 1rem 1.5rem;
-  }
-  .home__buttons {
-    flex-direction: column;
-  }
-  .home__handle {
-    width: 150px;
-    height: 253px;
-  }
-  .home__img {
-    width: 130px;
-  }
-  .about__info {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .skills__box {
-    column-gap: 1rem;
-  }
-  .skills__name {
-    font-size: var(--small-font-size);
-  }
-  .services__container {
-    grid-template-columns: 145px;
-    justify-content: center;
-  }
-  .work__item {
-    font-size: var(--small-font-size);
-  }
-  .work__filters {
-    column-gap: 0.25rem;
-  }
-}
+
 /* For large devices */
 @media screen and (min-width: 992px) {
   .container {

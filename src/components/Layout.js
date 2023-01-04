@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import {
   BiBook,
   BiBriefcase,
@@ -10,6 +10,7 @@ import {
 } from "react-icons/bi";
 import { BsLinkedin, BsTelegram, BsWhatsapp } from "react-icons/bs";
 function Layout({ children }) {
+  const [actvieNav, setActvieNav] = useState("#home");
   const [theme, setTheme] = useState(true);
   const scrollHeader = () => {
     const header = document.getElementById("header");
@@ -29,6 +30,29 @@ function Layout({ children }) {
       window.document.body.classList.remove("light-theme");
     }
   };
+  const navActiveHandle = (el) => {
+    setTimeout(() => {
+      setActvieNav(el);
+    }, 1000);
+  };
+
+  //
+
+  useLayoutEffect(() => {
+    const allSections = document.querySelectorAll("section");
+    const scrollActiveHandle = () => {
+      let section = "";
+
+      for (let i = 0; i < allSections.length; i++) {
+        if (allSections[i]?.offsetTop < window.scrollY + 100) {
+          section = "#" + allSections[i].id;
+        }
+      }
+      setActvieNav(section);
+    };
+    window.addEventListener("scroll", scrollActiveHandle);
+    return () => window.removeEventListener("scroll", scrollActiveHandle);
+  }, []);
   return (
     <>
       <header className="header " id="header">
@@ -39,27 +63,57 @@ function Layout({ children }) {
           <div className="nav__menu">
             <ul className="nav__list">
               <li className="nav_item">
-                <a href="#home" className="nav__link active-link">
+                <a
+                  href="#home"
+                  className={`nav__link ${
+                    actvieNav === "#home" ? "active-link" : ""
+                  } `}
+                  onClick={() => navActiveHandle("#home")}
+                >
                   <BiHome />
                 </a>
               </li>
-              <li className="nav_item">
-                <a href="#about" className="nav__link">
+              <li className="nav_item ">
+                <a
+                  href="#about"
+                  className={`nav__link ${
+                    actvieNav === "#about" ? "active-link" : ""
+                  } `}
+                  onClick={() => navActiveHandle("#about")}
+                >
                   <BiUser />
                 </a>
               </li>
               <li className="nav_item">
-                <a href="#skills" className="nav__link">
+                <a
+                  href="#skills"
+                  className={`nav__link ${
+                    actvieNav === "#skills" ? "active-link" : ""
+                  } `}
+                  onClick={() => navActiveHandle("#skills")}
+                >
                   <BiBook />
                 </a>
               </li>
               <li className="nav_item">
-                <a href="#work" className="nav__link">
+                <a
+                  href="#work"
+                  className={`nav__link ${
+                    actvieNav === "#work" ? "active-link" : ""
+                  } `}
+                  onClick={() => navActiveHandle("#work")}
+                >
                   <BiBriefcase />
                 </a>
               </li>
               <li className="nav_item">
-                <a href="#contact" className="nav__link">
+                <a
+                  href="#contact"
+                  className={`nav__link ${
+                    actvieNav === "#contact" ? "active-link" : ""
+                  } `}
+                  onClick={() => navActiveHandle("#contact")}
+                >
                   <BiMessageSquareDetail />
                 </a>
               </li>
