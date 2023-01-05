@@ -3,7 +3,7 @@ import { BiMailSend, BiRightArrowAlt } from "react-icons/bi";
 import { BsWhatsapp, BsTelegram } from "react-icons/bs";
 function Contact() {
   return (
-    <section class="contact section" id="contact">
+    <section className="contact section" id="contact">
       <span className="section_subtitle">Get in touch</span>
       <h2 className="section_title">Contact</h2>
       <div className="contact__container container grid">

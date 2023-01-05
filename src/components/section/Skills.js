@@ -1,9 +1,9 @@
 import React from "react";
 import { BiBadgeCheck } from "react-icons/bi";
-import { Fade } from "react-awesome-reveal";
+
 function Skills() {
   return (
-    <section class="skills section" id="skills">
+    <section className="skills section" id="skills">
       <span className="section_subtitle">My abilities</span>
       <h2 className="section_title">My Experience</h2>
       <div className="skills__container container grid">

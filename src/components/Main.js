@@ -9,7 +9,7 @@ import Contact from "./section/Contact";
 
 function Main() {
   return (
-    <main class="main">
+    <main className="main">
       {/* HOME */}
       <Home />
       {/* ABOUT */}

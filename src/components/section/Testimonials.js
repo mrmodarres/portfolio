@@ -2,7 +2,7 @@ import React from "react";
 
 function Testimonials() {
   return (
-    <section class="testimonial section">
+    <section className="testimonial section">
       <span className="section_subtitle">My clients say</span>
       <h2 className="section_title">Testimonial</h2>
       <div className="testimonial__container container">

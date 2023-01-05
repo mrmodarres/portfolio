@@ -132,7 +132,7 @@ function Layout({ children }) {
 
       {children}
 
-      <footer class="footer">
+      <footer className="footer">
         <div className="footer__container container">
           <h1 className="footer__title">Mehdi</h1>
           <ul className="footer__list">

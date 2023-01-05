@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import { BsDribbble, BsGithub, BsLinkedin, BsMouse } from "react-icons/bs";
 function Home() {
   return (
-    <section class="home section" id="home">
+    <section className="home section" id="home">
       <Fade direction="down">
         <div className="home__container container">
           <div className="home__data">

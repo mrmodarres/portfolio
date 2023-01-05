@@ -3,7 +3,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 // CREATE WORK CARD AND TABS AND DEFAULT DATA
 function Work() {
   return (
-    <section class="work section" id="work">
+    <section className="work section" id="work">
       <span className="section_subtitle">My Portfolio</span>
       <h2 className="section_title">Recent Works</h2>
       <div className="work__filters">
