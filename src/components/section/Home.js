@@ -26,7 +26,12 @@ function Home() {
           </div>
 
           <div className="home__handle">
-            <img src="/media/image/profile.png" alt="" className="home__img" />
+            <img
+              src="/media/image/profile.png"
+              loading="lazy"
+              alt=""
+              className="home__img"
+            />
           </div>
 
           <div className="home__social">
