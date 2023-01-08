@@ -1,6 +1,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-import { BsDribbble, BsGithub, BsLinkedin, BsMouse } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsMouse } from "react-icons/bs";
+import { SiGitlab } from "react-icons/si";
 function Home() {
   return (
     <section className="home section" id="home">
@@ -35,14 +36,29 @@ function Home() {
           </div>
 
           <div className="home__social">
-            <a href="" className="home__social-link">
+            <a
+              href="https://www.linkedin.com/in/mehdi-modarres/"
+              target="_blank"
+              rel="noreferrer"
+              className="home__social-link"
+            >
               <BsLinkedin />
             </a>
-            <a href="" className="home__social-link">
+            <a
+              href="https://github.com/mrmodarres"
+              className="home__social-link"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsGithub />
             </a>
-            <a href="" className="home__social-link">
-              <BsDribbble />
+            <a
+              href="https://gitlab.com/mr.modarres1994"
+              target="_blank"
+              rel="noreferrer"
+              className="home__social-link"
+            >
+              <SiGitlab />
             </a>
           </div>
           {/* </Fade> */}

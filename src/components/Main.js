@@ -25,7 +25,7 @@ function Main() {
 
       {/* TESTIMONIALS */}
 
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* CONTACT */}
       <Contact />
     </main>
