@@ -13,24 +13,6 @@ const servicesData = [
       info: ["I develop the user interface", "web page development"],
     },
   },
-  {
-    title: "  Visual Designer",
-    modalData: {
-      title: "Product Designer",
-      desription:
-        "Services with more 2 years of experince.Providing quality work to clients and companies.",
-      info: ["I develop the user interface", "web page development"],
-    },
-  },
-  {
-    title: "UI/UX Designer",
-    modalData: {
-      title: "Product Designer",
-      desription:
-        "Services with more 2 years of experince.Providing quality work to clients and companies.",
-      info: ["I develop the user interface", "web page development"],
-    },
-  },
 ];
 function Services() {
   const [showModal, setshowModal] = useState(false);
