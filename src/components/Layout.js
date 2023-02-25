@@ -146,20 +146,35 @@ function Layout({ children }) {
                 Projects
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#testimonial" className="footer__link">
                 Testimonial
               </a>
-            </li>
+            </li> */}
           </ul>
           <ul className="footer__social">
-            <a target="_blank" href="" className="footer__social-link">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/mehdi-modarres/"
+              className="footer__social-link"
+            >
               <BsLinkedin />
             </a>
-            <a target="_blank" href="" className="footer__social-link">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://telegram.me/mehdimodarres1994"
+              className="footer__social-link"
+            >
               <BsTelegram />
             </a>
-            <a target="_blank" href="" className="footer__social-link">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://wa.me/+989304042329"
+              className="footer__social-link"
+            >
               <BsWhatsapp />
             </a>
           </ul>

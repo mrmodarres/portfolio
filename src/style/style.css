@@ -585,6 +585,7 @@ body.light-theme {
 }
 
 .work__item {
+  background: transparent;
   cursor: pointer;
   color: var(--title-color);
   padding: 0.25rem 0.75rem;

@@ -13,24 +13,41 @@ function Contact() {
             <div className="contact__card">
               <BiMailSend className="contact__card-icon" />
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">user@gmail.com</span>
-              <a href="" target="_blank" className="contact__button">
+              <span className="contact__card-data">
+                mr.modarres1994@gmail.com
+              </span>
+              <a
+                href="mailto: mr.modarres1994@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                className="contact__button"
+              >
                 Write me <BiRightArrowAlt className="contact__button-icon" />
               </a>
             </div>
             <div className="contact__card">
               <BsWhatsapp className="contact__card-icon" />
               <h3 className="contact__card-title">Whatsapp</h3>
-              <span className="contact__card-data">09179825112</span>
-              <a href="" target="_blank" className="contact__button">
+              <span className="contact__card-data">+989304042329</span>
+              <a
+                href="https://wa.me/+989304042329"
+                target="_blank"
+                rel="noreferrer"
+                className="contact__button"
+              >
                 Write me <BiRightArrowAlt className="contact__button-icon" />
               </a>
             </div>
             <div className="contact__card">
               <BsTelegram className="contact__card-icon" />
               <h3 className="contact__card-title">telegram</h3>
-              <span className="contact__card-data">45454654</span>
-              <a href="" target="_blank" className="contact__button">
+              <span className="contact__card-data">mehdimodarres1994</span>
+              <a
+                href="https://telegram.me/mehdimodarres1994"
+                rel="noreferrer"
+                target="_blank"
+                className="contact__button"
+              >
                 Write me <BiRightArrowAlt className="contact__button-icon" />
               </a>
             </div>
