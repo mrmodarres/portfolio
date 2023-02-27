@@ -1,6 +1,8 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import { BsDribbble, BsGithub, BsLinkedin, BsMouse } from "react-icons/bs";
+import { SiGitlab } from "react-icons/si";
+import MehdiResume from "./MyResume.pdf";
 function Home() {
   return (
     <section className="home section" id="home">
@@ -14,7 +16,7 @@ function Home() {
             <div className="home__buttons">
               <a
                 download="MyResume.pdf"
-                href={MehdiResueme}
+                href={MehdiResume}
                 className="button button--ghost"
               >
                 Download CV
