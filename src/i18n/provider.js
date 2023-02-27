@@ -1,11 +1,11 @@
-import React, { Feragment } from "react";
+import React from "react";
 import { IntlProvider } from "react-intl";
 import { LOCALES } from "./locales";
 import messages from "./messages";
 const Provider = ({ children, locale = LOCALES.english }) => {
   <IntlProvider
     locale={locale}
-    textComponent={Feragment}
+    // textComponent={Feragment}
     messages={messages[locale]}
   >
     {children}
