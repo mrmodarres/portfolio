@@ -18,7 +18,7 @@ function Main() {
       <Skills />
 
       {/* SERVICES */}
-      <Services />
+      {/* <Services /> */}
 
       {/* WORK */}
       <Work />

@@ -24,7 +24,7 @@ function About() {
               <div className="about__box">
                 <BiBriefcaseAlt className="about__icon" />
                 <h3 className="about__title">Compoeleted</h3>
-                <span className="about__subtitle">24 + Projects</span>
+                <span className="about__subtitle">5 + Projects</span>
               </div>
               <div className="about__box">
                 <BiSupport className="about__icon" />

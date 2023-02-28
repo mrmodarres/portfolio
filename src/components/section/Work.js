@@ -9,69 +9,33 @@ const Tabs = [
     works: [
       {
         id: 1,
-        title: "Web design",
+        title: "Hulu clone",
         img: "",
-        url: "www.google.com",
+        url: "https://z-hulu.netlify.app/",
       },
       {
         id: 2,
-        title: "Web design",
+        title: "Disney + clone",
         img: "",
-        url: "www.google.com",
-      },
-      {
-        id: 3,
-        title: "App movil",
-        img: "",
-        url: "www.google.com",
-      },
-      {
-        id: 4,
-        title: "Brand design",
-        img: "",
-        url: "www.google.com",
+        url: "http://disney-plus-2022.netlify.app/",
       },
     ],
   },
   {
     id: 2,
-    label: "Web",
+    label: "Online Tv",
     works: [
       {
         id: 1,
-        title: "Web design",
+        title: "Hulu clone",
         img: "",
-        url: "www.google.com",
+        url: "https://z-hulu.netlify.app/",
       },
       {
         id: 2,
-        title: "Web design",
+        title: "Disney + clone",
         img: "",
-        url: "www.google.com",
-      },
-    ],
-  },
-  {
-    id: 3,
-    label: "Brand",
-    works: [
-      {
-        id: 1,
-        title: "Brand design",
-        img: "",
-        url: "www.google.com",
-      },
-    ],
-  },
-  {
-    id: 4,
-    label: "Movil",
-    works: [
-      {
-        id: 3,
-        title: "App movil",
-        img: "",
-        url: "www.google.com",
+        url: "http://disney-plus-2022.netlify.app/",
       },
     ],
   },
@@ -111,7 +75,12 @@ function Work() {
               <div className="work__card" key={el.id}>
                 <img src="" alt="TestWork1" className="work__img" />
                 <h3 className="work__title">{el.title}</h3>
-                <a href="#" className="work__button">
+                <a
+                  href={el.url}
+                  className="work__button"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Demo <BiRightArrowAlt className="work__icon" />
                 </a>
               </div>
