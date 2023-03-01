@@ -11,13 +11,13 @@ const Tabs = [
       {
         id: 1,
         title: "Hulu clone",
-        img: "",
+        img: "/media/image/Hulu.jpg",
         url: "https://z-hulu.netlify.app/",
       },
       {
         id: 2,
         title: "Disney + clone",
-        img: "../../../public/media/image/Disney-plus.jpg",
+        img: "/media/image/Disney-plus.jpg",
         url: "http://disney-plus-2022.netlify.app/",
       },
     ],
@@ -29,13 +29,13 @@ const Tabs = [
       {
         id: 1,
         title: "Hulu clone",
-        img: "",
+        img: "/media/image/Hulu.jpg",
         url: "https://z-hulu.netlify.app/",
       },
       {
         id: 2,
         title: "Disney + clone",
-        img: "",
+        img: "/media/image/Disney-plus.jpg",
         url: "http://disney-plus-2022.netlify.app/",
       },
     ],
