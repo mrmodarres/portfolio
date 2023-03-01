@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Bounce } from "react-awesome-reveal";
 import { BiRightArrowAlt } from "react-icons/bi";
+
 // CREATE WORK CARD AND TABS AND DEFAULT DATA
 const Tabs = [
   {
@@ -16,7 +17,7 @@ const Tabs = [
       {
         id: 2,
         title: "Disney + clone",
-        img: "",
+        img: "../../../public/media/image/Disney-plus.jpg",
         url: "http://disney-plus-2022.netlify.app/",
       },
     ],
@@ -73,7 +74,7 @@ function Work() {
           {tabShow !== undefined &&
             tabShow.map((el, index) => (
               <div className="work__card" key={el.id}>
-                <img src="" alt="TestWork1" className="work__img" />
+                <img src={el.img} alt={el.title} className="work__img" />
                 <h3 className="work__title">{el.title}</h3>
                 <a
                   href={el.url}
