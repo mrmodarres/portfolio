@@ -426,6 +426,7 @@ body.light-theme {
 }
 /*=============== SKILLS ===============*/
 .skills__container {
+  /* grid-template-columns: 1fr 1fr !important; */
   row-gap: 2rem;
   padding-top: 1rem;
 }
@@ -448,7 +449,9 @@ body.light-theme {
 }
 .skills__group {
   display: grid;
-  align-content: flex-start;
+  /* align-content: flex-start; */
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.5rem;
   row-gap: 1rem;
 }
 .skills__data {
@@ -600,6 +603,8 @@ body.light-theme {
 .work__img {
   border-radius: 1rem;
   margin-bottom: 0.75rem;
+  height: 15rem;
+  width: 100%;
 }
 .work__title {
   font-size: var(--normal-font-size);
@@ -948,7 +953,7 @@ body.light-theme {
     margin-bottom: 2.5rem;
   }
   .skills__container {
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
   }
   .services__container {

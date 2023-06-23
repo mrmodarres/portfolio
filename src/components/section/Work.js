@@ -20,6 +20,12 @@ const Tabs = [
         img: "/media/image/Disney-plus.jpg",
         url: "http://disney-plus-2022.netlify.app/",
       },
+      {
+        id: 3,
+        title: "Kavino Panel",
+        img: "/media/image/Kavino-en.jpg",
+        url: "",
+      },
     ],
   },
   {
@@ -37,6 +43,18 @@ const Tabs = [
         title: "Disney + clone",
         img: "/media/image/Disney-plus.jpg",
         url: "http://disney-plus-2022.netlify.app/",
+      },
+    ],
+  },
+  {
+    id: 3,
+    label: "Admin-Panel",
+    works: [
+      {
+        id: 1,
+        title: "Kavino Panel",
+        imag: "/media/image/Kavino-en.jpg",
+        url: "",
       },
     ],
   },
@@ -76,14 +94,16 @@ function Work() {
               <div className="work__card" key={el.id}>
                 <img src={el.img} alt={el.title} className="work__img" />
                 <h3 className="work__title">{el.title}</h3>
-                <a
-                  href={el.url}
-                  className="work__button"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Demo <BiRightArrowAlt className="work__icon" />
-                </a>
+                {el.url !== "" && (
+                  <a
+                    href={el.url}
+                    className="work__button"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Demo <BiRightArrowAlt className="work__icon" />
+                  </a>
+                )}
               </div>
             ))}
         </Bounce>
