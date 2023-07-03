@@ -23,7 +23,7 @@ function About() {
               </div>
               <div className="about__box">
                 <BiBriefcaseAlt className="about__icon" />
-                <h3 className="about__title">Compoeleted</h3>
+                <h3 className="about__title">Completed</h3>
                 <span className="about__subtitle">5 + Projects</span>
               </div>
               <div className="about__box">
