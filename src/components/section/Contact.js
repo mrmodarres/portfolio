@@ -57,7 +57,7 @@ function Contact() {
           <h3 className="contact__title">Write me your project</h3>
           <form action="" className="contact__form">
             <div className="contact__form-div">
-              <label for="" className="contact__form-tag">
+              <label className="contact__form-tag">
                 Name
               </label>
               <input
@@ -67,7 +67,7 @@ function Contact() {
               />
             </div>
             <div className="contact__form-div">
-              <label for="" className="contact__form-tag">
+              <label  className="contact__form-tag">
                 Mail
               </label>
               <input
@@ -77,7 +77,7 @@ function Contact() {
               />
             </div>
             <div className="contact__form-div contact__form-area">
-              <label for="" className="contact__form-tag">
+              <label  className="contact__form-tag">
                 Project
               </label>
               <textarea

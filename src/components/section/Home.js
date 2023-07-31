@@ -32,7 +32,7 @@ function Home() {
             <img
               src="/media/image/profile.png"
               loading="lazy"
-              alt=""
+              alt="profile"
               className="home__img"
             />
           </div>

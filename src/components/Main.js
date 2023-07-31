@@ -1,10 +1,10 @@
-import React, { useLayoutEffect, useState } from "react";
+import React from "react";
 import About from "./section/About";
 import Home from "./section/Home";
 import Skills from "./section/Skills";
 import Work from "./section/Work";
-import Services from "./section/Services";
-import Testimonials from "./section/Testimonials";
+// import Services from "./section/Services";
+// import Testimonials from "./section/Testimonials";
 import Contact from "./section/Contact";
 
 function Main() {

@@ -422,6 +422,8 @@ body.light-theme {
   font-size: var(--tiny-font-size);
 }
 .about__description {
+  text-align: left;
+  font-size: 0.90rem;
   margin-bottom: 2rem;
 }
 /*=============== SKILLS ===============*/

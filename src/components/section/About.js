@@ -33,8 +33,7 @@ function About() {
               </div>
             </div>
             <p className="about__description">
-              Frontend developer , I create React web app, I have years
-              experience at Reactjs.
+            I am a skilled front-end developer with a great sense of humor and a passion for connecting with people. I enjoy working as part of a team and believe that collaboration and communication are key to achieving success in any project or task. I am always eager to learn more and stay up-to-date with the latest trends and technologies in the industry.
             </p>
             <a href="#contact" className="button ">
               Contact Me
